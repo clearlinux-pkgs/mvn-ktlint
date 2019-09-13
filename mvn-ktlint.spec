@@ -4,11 +4,12 @@
 #
 Name     : mvn-ktlint
 Version  : 0.30.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/pinterest/ktlint/archive/0.30.0.tar.gz
 Source0  : https://github.com/pinterest/ktlint/archive/0.30.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.jar
 Source2  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
+Source3  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -55,6 +56,9 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlin
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -63,6 +67,7 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlin
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.jar
 /usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
 
 %files license
 %defattr(0644,root,root,0755)
