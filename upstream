@@ -2,3 +2,13 @@ dbd62bc998fe0566fcf090c3131cd2cfde2645b1/0.30.0.tar.gz
 d99b7bd1f8c6df188319406381975f3bfcab23d0/ktlint-0.30.0.jar
 e531ee5fa52e948de6ebe6c63d8b7712e50dd30e/ktlint-0.30.0.pom
 2c568781e7d4f5550ea5e8ae454b9dea4a7a2b9c/pom-0.30.0.pom
+995896e49bf9479d2d9c319d290bc17357bdc26d/ktlint-core-0.30.0.jar
+83ecb4926e797ffb5b8db178678e6c5d66b55612/ktlint-core-0.30.0.pom
+4765b1e35f11b903ad7bf45b415866a04b30ed70/ktlint-reporter-plain-0.30.0.jar
+5a53d0fb9fbb5e5409ee6f5084434856c4b0da7e/ktlint-reporter-plain-0.30.0.pom
+b571aba99b16f3d0bc2bed0022892722b1fbf8e1/ktlint-reporter-json-0.30.0.jar
+55c2d4171d65395fe51c90142d5f134c85b7952d/ktlint-reporter-json-0.30.0.pom
+e77e52c538d68ecd7d2825f3fcebb1915d287fd0/ktlint-reporter-checkstyle-0.30.0.jar
+0d7b5e9f95c18628f40a406c832f28d974f854df/ktlint-reporter-checkstyle-0.30.0.pom
+dd9e60dbbdae9b18b54081dfec5497ca7b3f18d6/ktlint-test-0.30.0.jar
+6e293a99367e111193d8dbe262d0baff52a44836/ktlint-test-0.30.0.pom

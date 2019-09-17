@@ -4,12 +4,22 @@
 #
 Name     : mvn-ktlint
 Version  : 0.30.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/pinterest/ktlint/archive/0.30.0.tar.gz
 Source0  : https://github.com/pinterest/ktlint/archive/0.30.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.jar
 Source2  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
-Source3  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
+Source3  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.jar
+Source4  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.pom
+Source5  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.jar
+Source6  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.pom
+Source7  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.jar
+Source8  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.pom
+Source9  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.jar
+Source10  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.pom
+Source11  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.jar
+Source12  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.pom
+Source13  : https://repo1.maven.org/maven2/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -56,8 +66,38 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlin
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
 
 
 %files
@@ -67,6 +107,16 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/github/shyiko/ktlin
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.jar
 /usr/share/java/.m2/repository/com/github/shyiko/ktlint/0.30.0/ktlint-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.jar
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-core/0.30.0/ktlint-core-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.jar
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-checkstyle/0.30.0/ktlint-reporter-checkstyle-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.jar
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-json/0.30.0/ktlint-reporter-json-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.jar
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-reporter-plain/0.30.0/ktlint-reporter-plain-0.30.0.pom
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.jar
+/usr/share/java/.m2/repository/com/github/shyiko/ktlint/ktlint-test/0.30.0/ktlint-test-0.30.0.pom
 /usr/share/java/.m2/repository/com/github/shyiko/ktlint/pom/0.30.0/pom-0.30.0.pom
 
 %files license
